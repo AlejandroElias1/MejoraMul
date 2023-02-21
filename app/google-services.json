@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1091409737070",
+    "project_id": "mult-22230",
+    "storage_bucket": "mult-22230.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091409737070:android:17d5e38313671eebb1fd7f",
+        "android_client_info": {
+          "package_name": "com.example.ej9mul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091409737070-a08cactr8ji0ditrmogu4brbtia46k1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLIbdMNnIQmFZOdVIm7_YfzmTATFq4nWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091409737070-a08cactr8ji0ditrmogu4brbtia46k1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
