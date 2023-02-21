@@ -2,6 +2,8 @@ package com.example.ej9mul
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import clase.Articulo
+import clase.personaje1
 import com.example.ej9mul.databinding.ActivityMerBinding
 
 class Activity_Mer : AppCompatActivity() {
@@ -27,7 +29,7 @@ class Activity_Mer : AppCompatActivity() {
             binding.continuar1.visibility = android.view.View.VISIBLE
         }
         binding.comprar.setOnClickListener {
-            binding.imageView3.visibility = android.view.View.VISIBLE
+            comprar()
         }
 
         binding.continuar1.setOnClickListener {
@@ -35,4 +37,9 @@ class Activity_Mer : AppCompatActivity() {
             startActivity(intent)
         }
     }
+}
+
+private fun comprar(){
+    personaje1.getMochila().addArticulo(Articulo("A2", 5, 10))
+    personaje1.setMonedero(personaje1.getMonedero() - 125)
 }
