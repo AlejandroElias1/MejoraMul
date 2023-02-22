@@ -28,6 +28,7 @@ class Activity_Mer : AppCompatActivity() {
             binding.comerciar.visibility = android.view.View.VISIBLE
             binding.continuar1.visibility = android.view.View.VISIBLE
         }
+
         binding.comprar.setOnClickListener {
             comprar()
         }
@@ -37,9 +38,13 @@ class Activity_Mer : AppCompatActivity() {
             startActivity(intent)
         }
     }
+    private fun comprar(){
+        if (binding.numcom.text.toString().isNotEmpty()) {
+            for (i in 1..binding.numcom.text.toString().toInt()) {
+                personaje1.getMochila().addArticulo(Articulo("Obj", 5, 10))
+                personaje1.setMonedero(personaje1.getMonedero() - 125)
+            }
+        }
+    }
 }
 
-private fun comprar(){
-    personaje1.getMochila().addArticulo(Articulo("A2", 5, 10))
-    personaje1.setMonedero(personaje1.getMonedero() - 125)
-}
