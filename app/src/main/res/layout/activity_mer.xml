@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cuantos obj quieres vender"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/comprar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.073"
@@ -109,6 +110,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cuantos obj quieres comprar"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/comprar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.073"
@@ -122,23 +124,47 @@
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/cancelar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/numven"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.13" />
 
     <EditText
         android:id="@+id/numven"
         android:layout_width="68dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginBottom="52dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/cancelar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/numObj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NumObj:"
+        app:layout_constraintBottom_toTopOf="@+id/cancelar"
+        app:layout_constraintEnd_toStartOf="@+id/obj"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toEndOf="@+id/numven"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <TextView
+        android:id="@+id/obj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.421" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

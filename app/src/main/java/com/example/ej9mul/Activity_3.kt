@@ -89,7 +89,7 @@ class Activity_3 : AppCompatActivity() {
 
         binding.continuar1.setOnClickListener {
             val intent = android.content.Intent(this, Activity_4::class.java)
-            db.collection("PersonajeFinal").document("pParaDaniel").set(personaje1)
+            db.collection("PersonajesFinales").document("Personaje1").set(personaje1)
             startActivity(intent)
         }
 

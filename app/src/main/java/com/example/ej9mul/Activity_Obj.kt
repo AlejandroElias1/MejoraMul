@@ -16,13 +16,11 @@ class Activity_Obj : AppCompatActivity() {
         binding= ActivityObjBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
         binding.recoger.setOnClickListener {
             val intent = android.content.Intent(this, Activity_Obj2::class.java)
             if (personaje1.getMochila().getPesoMochila() > 0){
-                personaje1.getMochila().addArticulo(Articulo("A1", 5, 10))
-                db.collection("PersonajeFinal").document("pParaDaniel").set(personaje1)
+                personaje1.getMochila().addArticulo(Articulo("obj", 5, 10))
+                db.collection("PersonajesFinales").document("Personaje1").set(personaje1)
             }
             startActivity(intent)
         }

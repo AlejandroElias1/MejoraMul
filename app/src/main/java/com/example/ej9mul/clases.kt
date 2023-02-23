@@ -47,6 +47,15 @@ class Mochila(private var pesoMochila: Int){
         println("Peso restante de la Mochila: "+pesoMochila)
 
     }
+    fun removeArticulo(articulo:Articulo){
+        if (contenido.contains(articulo)){
+            contenido.remove(articulo)
+            this.pesoMochila+=articulo.getPeso()
+        }else{
+            println("No tienes ese objeto")
+        }
+        println("Peso restante de la Mochila: "+pesoMochila)
+    }
     fun getContenido(): ArrayList<Articulo> {
         return contenido
     }
@@ -126,4 +135,4 @@ class Personaje(
 
 }
 var mochila1 = Mochila(200)
-var personaje1 = Personaje("","","",0,0,mochila1,0)
+var personaje1 = Personaje("","","",0,0,mochila1,10000)
