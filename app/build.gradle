@@ -53,4 +53,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:21.0.1'
     implementation platform('com.google.firebase:firebase-bom:31.2.2')
     implementation 'com.google.firebase:firebase-analytics-ktx'
+    //pop up
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }

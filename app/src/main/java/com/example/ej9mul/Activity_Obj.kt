@@ -17,7 +17,7 @@ class Activity_Obj : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.recoger.setOnClickListener {
-            val intent = android.content.Intent(this, Activity_Obj2::class.java)
+            val intent = android.content.Intent(this, Activity_4::class.java)
             if (personaje1.getMochila().getPesoMochila() > 0){
                 personaje1.getMochila().addArticulo(Articulo("obj", 5, 10))
                 db.collection("PersonajesFinales").document("Personaje1").set(personaje1)

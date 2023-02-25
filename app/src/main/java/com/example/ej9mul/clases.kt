@@ -78,6 +78,7 @@ class Personaje(
     private var defensa:Int,
     private var mochila: Mochila,
     private var monedero: Int,
+    private var vida: Int,
     ) {
 
     fun getNombre(): String {
@@ -132,7 +133,16 @@ class Personaje(
         monedero = aux
     }
 
+    fun getVida(): Int {
+        return vida
+    }
+
+    fun setVida(aux: Int) {
+        vida = aux
+    }
+
 
 }
 var mochila1 = Mochila(200)
-var personaje1 = Personaje("","","",0,0,mochila1,10000)
+var personaje1 = Personaje("","","",0,0,mochila1,10000, 100)
+var enemigo1 = Personaje("SetaMario","","",0,0,mochila1,10000, 100)

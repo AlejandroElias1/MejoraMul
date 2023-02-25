@@ -13,8 +13,6 @@ class Activity_Ciu : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.entrar.setOnClickListener {
-            val intent = android.content.Intent(this, Activity_Ciu2::class.java)
-            startActivity(intent)
         }
         binding.continuar1.setOnClickListener {
             val intent = android.content.Intent(this, Activity_4::class.java)

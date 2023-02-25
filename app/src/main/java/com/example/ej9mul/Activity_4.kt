@@ -10,12 +10,12 @@ class Activity_4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= Activity4Binding.inflate(layoutInflater)
         setContentView(binding.root)
-        dado(binding)
+        dado2(binding)
 
 
     }
 
-    fun dado(binding: Activity4Binding) {
+    fun dado2(binding: Activity4Binding) {
         var dado = (1..4).random()
         when (dado) {
             1 -> {

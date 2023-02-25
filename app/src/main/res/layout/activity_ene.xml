@@ -7,29 +7,30 @@
     android:layout_height="match_parent"
     tools:context=".Activity_Obj">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="254dp"
-        android:layout_height="196dp"
-        android:src="@drawable/enemigo"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/vidaEne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vida :"
+        app:layout_constraintBottom_toTopOf="@+id/ene"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.723"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.894" />
 
     <Button
         android:id="@+id/luchar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:text="luchar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/continuar1"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintEnd_toStartOf="@+id/Huir"
+        app:layout_constraintHorizontal_bias="0.24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintTop_toBottomOf="@+id/player"
+        app:layout_constraintVertical_bias="0.45" />
 
     <Button
         android:id="@+id/continuar1"
@@ -38,8 +39,105 @@
         android:text="continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toEndOf="@+id/luchar"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <ImageView
+        android:id="@+id/player"
+        android:layout_width="143dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543"
+        app:srcCompat="@drawable/humano" />
+
+    <ImageView
+        android:id="@+id/ene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223"
+        app:srcCompat="@drawable/enemigo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/vidaPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vida :"
+        app:layout_constraintBottom_toTopOf="@+id/player"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ene"
+        app:layout_constraintVertical_bias="0.919" />
+
+    <TextView
+        android:id="@+id/textViewVidaPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/player"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toEndOf="@+id/vidaPlayer"
+        app:layout_constraintTop_toBottomOf="@+id/ene"
+        app:layout_constraintVertical_bias="0.919" />
+
+    <TextView
+        android:id="@+id/textViewVidaEne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/ene"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toEndOf="@+id/vidaEne"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <Button
+        android:id="@+id/Huir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Huir"
+        app:layout_constraintBottom_toTopOf="@+id/continuar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player"
+        app:layout_constraintVertical_bias="0.409" />
+
+    <Button
+        android:id="@+id/Objeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Objeto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toEndOf="@+id/Huir"
+        app:layout_constraintTop_toBottomOf="@+id/player"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/fallopop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ataque fallido"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Huir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
